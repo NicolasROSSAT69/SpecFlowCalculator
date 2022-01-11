@@ -46,4 +46,10 @@ public sealed class CalculatorStepDefinitions
     {
         _result = _calculator.Multiply();
     }
+    
+    [When(@"the two numbers are divided")]
+    public void WhenTheTwoNumbersAreDivided()
+    {
+        _result = _calculator.Divide();
+    }
 }

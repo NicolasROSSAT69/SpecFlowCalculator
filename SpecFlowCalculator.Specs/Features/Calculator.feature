@@ -18,3 +18,10 @@ Scenario: Multiply two numbers
 	And the second number is 10
 	When the two numbers are multiplied
 	Then the result should be 100
+
+@divide
+Scenario: Divide two numbers
+	Given the first number is 30
+	And the second number is 2
+	When the two numbers are divided
+	Then the result should be 15
