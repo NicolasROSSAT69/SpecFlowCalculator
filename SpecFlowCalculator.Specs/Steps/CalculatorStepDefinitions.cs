@@ -40,4 +40,10 @@ public sealed class CalculatorStepDefinitions
     {
         Assert.Equal(result, _result);
     }
+
+    [When(@"the two numbers are multiplied")]
+    public void WhenTheTwoNumbersAreMultiplied()
+    {
+        _result = _calculator.Multiply();
+    }
 }
