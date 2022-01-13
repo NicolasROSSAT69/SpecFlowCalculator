@@ -87,11 +87,11 @@ Link to a feature: [Calculator]($projectname$/Features/Calculator.feature)
         [Xunit.SkippableFactAttribute(DisplayName="Add numbers")]
         [Xunit.TraitAttribute("FeatureTitle", "Calculator")]
         [Xunit.TraitAttribute("Description", "Add numbers")]
-        [Xunit.TraitAttribute("Category", "addNnumber")]
+        [Xunit.TraitAttribute("Category", "add")]
         public virtual void AddNumbers()
         {
             string[] tagsOfScenario = new string[] {
-                    "addNnumber"};
+                    "add"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add numbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 9
@@ -130,11 +130,11 @@ this.ScenarioInitialize(scenarioInfo);
         [Xunit.SkippableFactAttribute(DisplayName="Multiply numbers")]
         [Xunit.TraitAttribute("FeatureTitle", "Calculator")]
         [Xunit.TraitAttribute("Description", "Multiply numbers")]
-        [Xunit.TraitAttribute("Category", "multiplyNnumber")]
+        [Xunit.TraitAttribute("Category", "multiply")]
         public virtual void MultiplyNumbers()
         {
             string[] tagsOfScenario = new string[] {
-                    "multiplyNnumber"};
+                    "multiply"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiply numbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 15
@@ -173,11 +173,11 @@ this.ScenarioInitialize(scenarioInfo);
         [Xunit.SkippableFactAttribute(DisplayName="Divide numbers")]
         [Xunit.TraitAttribute("FeatureTitle", "Calculator")]
         [Xunit.TraitAttribute("Description", "Divide numbers")]
-        [Xunit.TraitAttribute("Category", "divideNnumber")]
+        [Xunit.TraitAttribute("Category", "divide")]
         public virtual void DivideNumbers()
         {
             string[] tagsOfScenario = new string[] {
-                    "divideNnumber"};
+                    "divide"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Divide numbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 21

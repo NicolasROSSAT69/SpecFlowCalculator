@@ -32,18 +32,18 @@ public sealed class CalculatorStepDefinitions
     [When(@"the n numbers are added")]
     public void WhenTheNNumbersAreAdded()
     {
-        _result = _calculator.AddN();
+        _result = _calculator.Add();
     }
 
     [When(@"the n numbers are multiplied")]
     public void WhenTheNNumbersAreMultiplied()
     {
-        _result = _calculator.MultiplyN();
+        _result = _calculator.Multiply();
     }
 
     [When(@"the n numbers are divided")]
     public void WhenTheNNumbersAreDivided()
     {
-        _result = _calculator.DiviteN();
+        _result = _calculator.Divide();
     }
 }
