@@ -17,39 +17,33 @@ public sealed class CalculatorStepDefinitions
         _scenarioContext = scenarioContext;
     }
 
-    [Given("the first number is (.*)")]
-    public void GivenTheFirstNumberIs(int number)
-    {
-        _calculator.FirstNumber = number;
-    }
-
-    [Given("the second number is (.*)")]
-    public void GivenTheSecondNumberIs(int number)
-    {
-        _calculator.SecondNumber = number;
-    }
-
-    [When("the two numbers are added")]
-    public void WhenTheTwoNumbersAreAdded()
-    {
-        _result = _calculator.Add();
-    }
-
     [Then("the result should be (.*)")]
     public void ThenTheResultShouldBe(int result)
     {
         Assert.Equal(result, _result);
     }
 
-    [When(@"the two numbers are multiplied")]
-    public void WhenTheTwoNumbersAreMultiplied()
+    [Given(@"the list number is (.*), (.*), (.*)")]
+    public void GivenTheListNumberIs(int p0, int p1, int p2)
     {
-        _result = _calculator.Multiply();
+        _calculator.ListNumber = new List<int>() {p0, p1, p2};
     }
-    
-    [When(@"the two numbers are divided")]
-    public void WhenTheTwoNumbersAreDivided()
+
+    [When(@"the n numbers are added")]
+    public void WhenTheNNumbersAreAdded()
     {
-        _result = _calculator.Divide();
+        _result = _calculator.AddN();
+    }
+
+    [When(@"the n numbers are multiplied")]
+    public void WhenTheNNumbersAreMultiplied()
+    {
+        _result = _calculator.MultiplyN();
+    }
+
+    [When(@"the n numbers are divided")]
+    public void WhenTheNNumbersAreDivided()
+    {
+        _result = _calculator.DiviteN();
     }
 }
